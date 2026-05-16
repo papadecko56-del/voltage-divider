@@ -21,7 +21,7 @@ try:
    else:
         V_out = Vs * (R2 / (R1 + R2))
         print(f"Output voltage:{V_out} V")
-
+# create a graph that shows the relationship between voltage sources
         labels = ['R1 drop', 'R2 drop(Vout)']
         values = [Vs - V_out, V_out]
         plt.bar(labels, values, color=['#3b82f6', '#00e5ff'])
